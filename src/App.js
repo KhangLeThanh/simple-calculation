@@ -5,17 +5,13 @@ import Input from "./components/Input";
 import ClearButton from "./components/ClearButton";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      input: 0,
-      previousNumber: 0,
-      currentNumber: 0,
-      operator: "",
-      temp: 0
-    };
-  }
+  state = {
+    input: 0,
+    previousNumber: 0,
+    currentNumber: 0,
+    operator: "",
+    temp: 0
+  };
 
   addToInput = val => {
     if (this.state.input === 0 || this.state.input === this.state.temp) {
