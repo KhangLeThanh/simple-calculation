@@ -1,0 +1,35 @@
+.button{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    background-color:#e0e1e6;
+    color:#888888;
+    flex: 1;
+    outline: 1px solid #888888;
+}
+.button svg{
+    height: 1.4em;
+}
+.button:hover{
+    background-color: #fe9241;
+    color: #ffffff;
+}
+.button.operator:hover{
+    background-color: #ea7720;
+    color: #ffffff;
+}
+.operator{
+    background-color: #fe9241;
+    color: #ffffff;
+}
+.last_row .button:first-child{
+    flex: 3
+}
+@media (max-width: 768px) {
+    
+    .button svg{
+        height: 1.4em;
+    }
+}
